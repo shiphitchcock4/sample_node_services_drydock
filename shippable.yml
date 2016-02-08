@@ -13,16 +13,16 @@ services:
   - cassandra
   - elasticsearch 
   - memcached
-  #- mongoDB
-  #- mySQL 
+  #- mongodb
+  #- mysql 
   #- neo4j 
-  #- rabbitMQ 
+  #- rabbitmq 
   #- redis 
   #- selenium 
   #- sQLLite
-  #- couchDB 
+  #- couchdb
   #- kestrel
-  #- rethinkDB
+  #- rethinkdb
   #- riak
 
 env:  
