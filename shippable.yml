@@ -10,15 +10,15 @@ node_js:
   - 0.10
   - 0.8
 services:
-  - Cassandra
-  - Elasticsearch 
-  - Memcached
-  - MongoDB
-  #- MySQL 
-  #- Neo4j 
-  #- RabbitMQ 
-  #- Redis 
-  #- Selenium 
+  - cassandra
+  - elasticsearch 
+  - memcached
+  - mongoDB
+  #- mySQL 
+  #- neo4j 
+  #- rabbitMQ 
+  #- redis 
+  #- selenium 
   #- SQLLite
 
 env:  
