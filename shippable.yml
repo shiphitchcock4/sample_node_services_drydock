@@ -13,7 +13,7 @@ services:
   - cassandra
   - elasticsearch    
   - memcached
-  - mongoDB
+  - mongodb
   #- mySQL 
   #- neo4j 
   #- rabbitMQ 
