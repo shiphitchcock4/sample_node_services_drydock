@@ -10,12 +10,12 @@ node_js:
   - 0.10
   #- 0.8
 services:
-  - cassandra
-  - elasticsearch   
-  - memcached
-  #- mongodb
-  #- mysql 
-  #- neo4j 
+  #- cassandra
+  #- elasticsearch   
+  #- memcached
+  - mongodb
+  - mysql 
+  - neo4j 
   #- rabbitmq 
   #- redis 
   #- selenium 
