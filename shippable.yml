@@ -8,7 +8,7 @@ node_js:
   - 4.2.2
   - 0.11
   - 0.10
-  - 0.8
+  #- 0.8
 services:
   - cassandra
   - elasticsearch 
@@ -46,7 +46,7 @@ build:
   ci:
     - ps -eax
     - ls -al
-    - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
+  #  - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
     - npm install
     - node --version
 
