@@ -10,7 +10,7 @@ node_js:
   - 0.10
   #- 0.8
 services:
-  - cassandra
+  #- cassandra
   - elasticsearch 
   - memcached
   - mongodb
