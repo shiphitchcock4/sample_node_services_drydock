@@ -10,20 +10,20 @@ node_js:
   - 0.10
   - 0.8
 services:
-  - Cassandra
-  - Elasticsearch 
-  - Memcached
-  #- MongoDB
-  #- MySQL 
-  #- Neo4j 
-  #- RabbitMQ 
-  #- Redis 
-  #- Selenium 
+  - cassandra
+  - elasticsearch 
+  - memcached
+  #- mongodb
+  #- mysql
+  #- neo4j 
+  #- rabbitMQ 
+  #- redis 
+  #- selenium 
   #- SQLLite
-  #- CouchDB 
-  #- Kestrel
-  #- RethinkDB
-  #- Riak
+  #- couchdb
+  #- kestrel
+  #- rethinkdb
+  #- riak
   
 
 env:  
