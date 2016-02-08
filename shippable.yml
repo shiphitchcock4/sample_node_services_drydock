@@ -16,7 +16,7 @@ services:
   - mongodb
   #- mySQL 
   #- neo4j 
-  #- rabbitMQ 
+  #- rabbitmq
   #- redis 
   #- selenium 
   #- SQLLite
