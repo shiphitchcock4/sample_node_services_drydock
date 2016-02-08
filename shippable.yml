@@ -15,9 +15,9 @@ services:
   #- memcached
   #- mongodb
   - mysql 
-  - neo4j 
+  #- neo4j 
   - rabbitmq
-  #- redis 
+  - redis 
   #- selenium 
   #- SQLLite
 
