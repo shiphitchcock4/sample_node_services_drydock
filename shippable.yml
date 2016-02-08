@@ -6,6 +6,17 @@ node_js:
   - 0.12 
   - 5.0
   - 4.2.2
+services:
+  - Cassandra
+  - Elasticsearch 
+  - Memcached
+  - MongoDB
+  #- MySQL 
+  #- Neo4j 
+  #- RabbitMQ 
+  #- Redis 
+  #- Selenium 
+  #- SQLLite
 
 env:  
   global:
