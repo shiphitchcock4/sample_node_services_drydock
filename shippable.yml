@@ -3,7 +3,9 @@ language: node_js
 
 # Version number
 node_js:
-  - 0.12   
+  - 0.12 
+  - 5.0
+  - 4.2.2
 
 env:  
   global:
@@ -13,21 +15,24 @@ env:
     - M1=ONE
 
 build:
-  pre_ci:
-    - docker build -t=shippabledocker/hitchcock4_sample_node .
+  #pre_ci:
+   # - docker build -t=shippabledocker/hitchcock4_sample_node .
 
   pre_ci_boot:
-    image_name: shippabledocker/hitchcock4_sample_node
-    image_tag: latest
-    pull: false
+    image_name: drydock/u12nod
+    image_tag: tip
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
     - ps -eax
     - ls -al
+    - source ~/.nvm/nvm.sh && nvm install $SHIPPABLE_NODE_VERSION
+    - npm install
+    - node --version
 
-  post_ci:
-    - docker push shippabledocker/hitchcock4_sample_node
+  #post_ci:
+   # - docker push shippabledocker/hitchcock4_sample_node
 
 integrations:
   hub:
